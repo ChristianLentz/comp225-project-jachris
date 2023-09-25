@@ -1,20 +1,27 @@
 {
   "name": "comp225-project-jachris",
   "version": "1.0.0",
-  "description": "",
+  "description": "Source code for the Virtual Mac Community Trade Center App.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "",
+    "test": ""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ChristianLentz/comp225-project-jachris.git"
   },
-  "keywords": [],
+  "keywords": [
+    "Free-Swap",
+    "Macalester"
+  ],
   "author": "Christian Lentz, Jakob Murakami, Jacob Hellenbrand",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ChristianLentz/comp225-project-jachris/issues"
+  },
+  "dependencies": {
+    "firebase": "^10.4.0"
   },
   "homepage": "https://github.com/ChristianLentz/comp225-project-jachris#readme"
 }
