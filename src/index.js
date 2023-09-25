@@ -1,6 +1,7 @@
 /**
- * The index.js file handles the startup of the app, this is the first thing 
- * that we run! 
+ * - The index.js file handles the startup of the app, this is the first thing 
+ * that we run. 
+ * - Note that JS will control the functionality of our application. 
  */
 
 // Import the functions you need from the SDKs you need
@@ -28,6 +29,7 @@ const firebaseConfig = {
 const myApp = initializeApp(firebaseConfig);
 
 // Returns current auth instance 
+// TODO: set up user authentification with mac emails! 
 const auth = getAuth(myApp); 
 
 // Check / recored user login 
