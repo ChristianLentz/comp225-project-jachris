@@ -1,0 +1,20 @@
+{
+  "name": "comp225-project-jachris",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristianLentz/comp225-project-jachris.git"
+  },
+  "keywords": [],
+  "author": "Christian Lentz, Jakob Murakami, Jacob Hellenbrand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristianLentz/comp225-project-jachris/issues"
+  },
+  "homepage": "https://github.com/ChristianLentz/comp225-project-jachris#readme"
+}
