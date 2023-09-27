@@ -8,10 +8,10 @@
  */
 
 // Import functions from the firebase SDK
-import { initializeApp } from "firebase/app"; 'https://gstatic.com/firebasejs/9.0.0/firebase-app.js'
-import { getAuth, onAuthStateChanged } from "firebase/auth"; 'https://gstatic.com/firebasejs/9.0.0/firebase-auth.js'
-import { getFirestore } from "firebase/firestore"; 'https://gstatic.com/firebasejs/9.0.0/firebase-firestore.js'
-import { getAnalytics } from "firebase/analytics"; 'https://gstatic.com/firebasejs/9.0.0/firebase-analytics.js'
+import { initializeApp } from "firebase/app"; // 'https://gstatic.com/firebasejs/9.0.0/firebase-app.js'
+import { getAuth, onAuthStateChanged } from "firebase/auth"; // 'https://gstatic.com/firebasejs/9.0.0/firebase-auth.js'
+import { getFirestore } from "firebase/firestore"; // 'https://gstatic.com/firebasejs/9.0.0/firebase-firestore.js'
+import { getAnalytics } from "firebase/analytics"; // 'https://gstatic.com/firebasejs/9.0.0/firebase-analytics.js'
 
 // Import other SDKs and functions needed
 

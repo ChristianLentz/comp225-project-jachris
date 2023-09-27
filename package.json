@@ -4,8 +4,9 @@
   "description": "Source code for the Virtual Mac Community Trade Center App.",
   "main": "index.js",
   "scripts": {
-    "build": "",
-    "test": ""
+    "build": "webpack --mode=development",
+    "test": "", 
+    "start": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,8 @@
     "url": "https://github.com/ChristianLentz/comp225-project-jachris/issues"
   },
   "dependencies": {
-    "firebase": "^10.4.0"
+    "firebase": "^10.4.0",
+    "webpack-dev-server": "^4.15.1"
   },
   "devDependencies": {
     "webpack": "^5.88.2",
