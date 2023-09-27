@@ -23,5 +23,9 @@
   "dependencies": {
     "firebase": "^10.4.0"
   },
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
   "homepage": "https://github.com/ChristianLentz/comp225-project-jachris#readme"
 }

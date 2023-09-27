@@ -1,20 +1,25 @@
 /**
+ * - The functionality of our app will be built using nodeJS
  * - The index.js file handles the startup of the app, this is the first thing 
- * that we run. 
- * - Note that JS will control the functionality of our application. 
+ * that we run.
+ * - All key functionality starts here. This is where we import the packages we 
+ * need, initialize the app / db, and get auth state / analytics for a given 
+ * instance of the app  
  */
 
-// Import the functions you need from the SDKs you need
+// Import functions from the firebase SDK
 import { initializeApp } from "firebase/app"; 'https://gstatic.com/firebasejs/9.0.0/firebase-app.js'
 import { getAuth, onAuthStateChanged } from "firebase/auth"; 'https://gstatic.com/firebasejs/9.0.0/firebase-auth.js'
-import { getAnalytics } from "firebase/analytics"; 'https://gstatic.com/firebasejs/0.0.0/firebase-analytics.js'
+import { getFirestore } from "firebase/firestore"; 'https://gstatic.com/firebasejs/9.0.0/firebase-firestore.js'
+import { getAnalytics } from "firebase/analytics"; 'https://gstatic.com/firebasejs/9.0.0/firebase-analytics.js'
 
-// TODO: Add SDKs for Firebase products that you want to use
+// Import other SDKs and functions needed
+
 // TODO: Add a module bundler SDK !! 
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Our Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// Note that measurementID is an optional parameter here
 const firebaseConfig = {
   apiKey: "AIzaSyDnuNDOz0v2w4M78YHk8mUupDKWT073MSE",
   authDomain: "mac-community-trade-center.firebaseapp.com",
@@ -25,10 +30,18 @@ const firebaseConfig = {
   measurementId: "G-DWMWXEG7BY"
 };
 
-// Initialize Firebase
+// Initialize Firebase app 
 const myApp = initializeApp(firebaseConfig);
 
-// Returns current auth instance 
+// Initialize database
+// TODO: set up our db
+const myDB = getFirestore(firebaseConfig) 
+
+// Get analytics for a given instance of the app
+// TODO: set this up!   
+const analytics = getAnalytics(myApp);
+
+// Get auth for the current instance of the app 
 // TODO: set up user authentification with mac emails! 
 const auth = getAuth(myApp); 
 
@@ -40,6 +53,3 @@ onAuthStateChanged(auth, user => {
         console.log("no user!"); 
     }
 })
-
-// Return analysitcs for given instance of the app 
-const analytics = getAnalytics(myApp);
