@@ -10,13 +10,12 @@
 // Import functions from the firebase SDK
 import { initializeApp } from "firebase/app"; // 'https://gstatic.com/firebasejs/9.0.0/firebase-app.js'
 import { getAuth, onAuthStateChanged } from "firebase/auth"; // 'https://gstatic.com/firebasejs/9.0.0/firebase-auth.js'
-import { getFirestore } from "firebase/firestore"; // 'https://gstatic.com/firebasejs/9.0.0/firebase-firestore.js'
+import { getFirestore, Timestamp, FieldValue, Filter} from "firebase/firestore"; // 'https://gstatic.com/firebasejs/9.0.0/firebase-firestore.js'
 import { getAnalytics } from "firebase/analytics"; // 'https://gstatic.com/firebasejs/9.0.0/firebase-analytics.js'
 
 // Import other SDKs and functions needed
 
-// TODO: Add a module bundler SDK !! 
-// https://firebase.google.com/docs/web/setup#available-libraries
+// ------------------------------------------------------------ initialize app
 
 // Our Firebase configuration
 // Note that measurementID is an optional parameter here
@@ -29,17 +28,21 @@ const firebaseConfig = {
   appId: "1:889714479210:web:c6719ae19008c2da0eba13",
   measurementId: "G-DWMWXEG7BY"
 };
-
-// Initialize Firebase app 
 const myApp = initializeApp(firebaseConfig);
+
+// ------------------------------------------------------------ initialize db
 
 // Initialize database
 // TODO: set up our db
 const myDB = getFirestore(firebaseConfig) 
 
+// ------------------------------------------------------------ analytics 
+
 // Get analytics for a given instance of the app
 // TODO: set this up!   
 const analytics = getAnalytics(myApp);
+
+// ------------------------------------------------------------ user auth
 
 // Get auth for the current instance of the app 
 // TODO: set up user authentification with mac emails! 
