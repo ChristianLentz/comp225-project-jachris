@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 nav{
-    width: 80%;
+    width: 95%;
     position: sticky;
     margin: 10px;
     z-index: 1;
@@ -24,13 +24,20 @@ nav{
 .logo img{
     width: 150px;
 }
+.mac-logo{
+    flex-basis: 20%;
+}
+.mac-logo img{
+    width: 105px;
+}
 /* align the nav bar to the right */
 .nav-links{
     flex: 1;
-    position: absolute;
-    right:-350px;
-    height: 100px;
-    position: relative;
+    text-align: right;
+    
+    /* right:-350px;
+    height: 100px; */
+    /* position: relative; */
 }
 /* this formats text and puts it inline block style */
 .nav-links ul li{
