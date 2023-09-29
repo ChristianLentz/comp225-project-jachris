@@ -30,7 +30,7 @@ ul{
     flex-basis: 0;
 }
 .mac-logo img{
-    vertical-align: text-bottom;
+    display: inline;
     width: 90px;
     height: 90px;
     border-radius: 50%;
