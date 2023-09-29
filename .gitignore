@@ -53,4 +53,11 @@
 # There are a number of other tricks and syntax details. Check out: 
 # https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/
 
+# ------------------------------------------------------
+
+# ignore node_modules... anytime someone has this project on their local, package.json and 
+# package-lock.json will fetch the modules needed 
 node_modules/ 
+
+# ignore any hiden files 
+.*
