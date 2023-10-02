@@ -1,3 +1,2 @@
-# Virtual Mac Community Trade Center 
-## Authors: Christian Lentz, Jacob Hellenbrand, Jake Murakami 
-### Comp 225 Fall 2023
+# THIS REPO IS NO LONGER IN USE!
+## Go here instead: https://github.com/ChristianLentz/comp225-project-team-Jachris
