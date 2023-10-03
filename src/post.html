@@ -30,7 +30,7 @@
         <a href = "index.html">lets go home</a> -->
 
           <!-- This is what is used to send the form to a server to store info -->
-          <!-- <form action="/my-handling-form-page" method="post"> -->
+          <!-- <form action="/making your form page" method="post"> -->
         <form>
             <ul>
               <li>
@@ -45,12 +45,15 @@
                 <label for="msg">Message:</label>
                 <textarea id="msg" name="user_message"></textarea>
               </li>
+              <li>
+                <label for="file-input"> Image: </label>
+                <input type="file" id="file-input" accept="image/*">
+              </li>
               <li class="button">
                 <button type="submit">Make your Post</button>
               </li>
 <!--  add image element to form, not in css or a list -->
-              <label for="file-input"> Select an image: </label>
-              <input type="file" id="file-input" accept="image/*">
+              
             </ul>
           </form>
 
